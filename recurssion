@@ -1,0 +1,12 @@
+def fibb(number):
+  if number==0:
+    return 0
+  elif number ==1 or number ==2:
+    return 1
+  else:
+    return (fibb(number-1)+fibb(number-2))
+
+number = int(input("Enter a number:"))
+print("the fibb series:", end="")
+for i in range(0, number):
+  print(fibb(i))
